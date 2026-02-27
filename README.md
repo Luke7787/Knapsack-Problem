@@ -46,26 +46,28 @@ Selected item indices are listed in ascending order.
 
 ## Approach 2: Branch-and-Bound
 
-### Description
-
-The Branch-and-Bound (B&B) approach uses a tree search to explore possible solutions. Each node represents a partial solution, with some components (items) fixed and others remaining. The algorithm uses bounding functions to prune the search tree and improve efficiency.
+Uses a tree-based search to explore partial solutions. Bounding functions are applied to prune the search space and improve efficiency.
 
 ### Output
 
-Upon termination, the program should output:
-Using Branch and Bound the best feasible solution found: Value <value>, Weight <weight> <item> <item> <item>
+Upon completion, the program prints:
 
-The output displays the best solution found by the B&B algorithm in ascending index order.
+```
+Using Branch and Bound the best feasible solution found: Value <VALUE>, Weight <WEIGHT> <ITEM> <ITEM> ...
+```
+
+Selected item indices are listed in ascending order.
 
 ### Java Implementation
 
-- **File Name**: `BandB.java`
-- **Main Method**: Reads the input file and runs the branch-and-bound algorithm.
-- **Output**: Prints the best solution found, including value, weight, and indices of chosen items.
+- File: `BandB.java`
+- Reads the input file
+- Executes the branch-and-bound algorithm
+- Outputs total value, total weight, and selected item indices
 
 ## Testing and Results
 
-Run both algorithms on the following datasets to evaluate performance:
+Evaluate both algorithms using the following datasets:
 
 - `easy.20.txt`
 - `easy50.txt`
@@ -73,17 +75,24 @@ Run both algorithms on the following datasets to evaluate performance:
 - `easy.200.txt`
 - `hard.200.txt`
 
-Record the results in a table including the best value found, weight, time taken, and any issues encountered (e.g., timeouts). For Branch-and-Bound, include information on timeouts and best results up to that point.
+Record results in a table including:
+
+- Best value found
+- Total weight
+- Execution time
+- Any issues encountered (e.g., timeouts)
+
+For Branch-and-Bound, also report whether a timeout occurred and the best solution found before termination.
 
 ### Example Results Table
 
-| Dataset        | Algorithm    | Value | Weight | Time (s) | Status        |
-|----------------|--------------|-------|--------|----------|---------------|
-| easy.20.txt    | Dynamic Prog  | 100   | 50     | 0.5      | Completed     |
-| easy.20.txt    | Branch-and-Bound | 100   | 50     | 1.2      | Completed     |
-| hard50.txt     | Dynamic Prog  | 500   | 200    | 5.0      | Completed     |
-| hard50.txt     | Branch-and-Bound | 500   | 200    | 120.0    | Timeout       |
-| ...            | ...          | ...   | ...    | ...      | ...           |
+| Dataset        | Algorithm           | Value | Weight | Time (s) | Status    |
+|----------------|--------------------|-------|--------|----------|-----------|
+| easy.20.txt    | Dynamic Programming | 100   | 50     | 0.500    | Completed |
+| easy.20.txt    | Branch-and-Bound    | 100   | 50     | 1.200    | Completed |
+| hard50.txt     | Dynamic Programming | 500   | 200    | 5.000    | Completed |
+| hard50.txt     | Branch-and-Bound    | 500   | 200    | 120.000  | Timeout   |
+| ...            | ...                | ...   | ...    | ...      | ...       |
 
 ## Deliverables
 
