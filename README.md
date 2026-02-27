@@ -96,24 +96,26 @@ For Branch-and-Bound, also report whether a timeout occurred and the best soluti
 
 ## Deliverables
 
-1. **Typed Report**: A typed report in PDF format documenting the basics of each implementation, data structures used, and a brief description of the algorithms. The report should be no longer than two single-sided pages, using a readable font (12 pt) with line spacing of 1.2 to 1.4.
+1. **Report (PDF)**
+   - Brief overview of each implementation
+   - Data structures used
+   - Summary of algorithm design and results
+   - Maximum two pages, 12 pt font, 1.2–1.4 line spacing
 
-2. **Java Files**:
-   - **DynProg.java**: Contains the implementation of the Dynamic Programming algorithm.
-   - **BandB.java**: Contains the implementation of the Branch-and-Bound algorithm.
+2. **Java Source Files**
+   - `DynProg.java`
+   - `BandB.java`
 
-Both Java files should have a `main` method that reads the input file from the command line, runs the algorithm, and outputs the results.
+Both programs must include a `main` method that reads the input file from the command line, executes the algorithm, and prints the results.
 
-### Submission Instructions
+### Submission
 
-Submit the following before your demo:
-- **Report**: Typed and saved as a PDF.
-- **Java Files**: `DynProg.java` and `BandB.java` as text files.
+Submit the report (PDF) and both Java source files prior to the demo.
 
-Ensure that you can demonstrate the outputs of both algorithms during the lab demo.
+Be prepared to demonstrate and explain the output of both algorithms.
 
 ## Notes
 
-- Ensure clarity and readability of the code.
-- Document any external sources used for understanding or inspiration.
-- Be prepared to explain the algorithms and their implementations during the demo.
+- Ensure code is clear and well-structured.
+- Cite any external references used.
+- Be ready to explain algorithm design decisions and performance trade-offs.
