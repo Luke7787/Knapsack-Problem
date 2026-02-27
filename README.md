@@ -1,8 +1,6 @@
-# Assignment 4: Knapsack Algorithms
+# Knapsack Algorithm Analysis
 
-## Introduction
-
-This assignment explores two approaches to solving the 0-1 Knapsack Problem: Dynamic Programming and Branch-and-Bound. The goal is to compare these methods in terms of running time and solution accuracy. Both approaches are implemented in Java and tested on various datasets to understand their performance trade-offs.
+This project compares two approaches to the 0-1 Knapsack Problem: Dynamic Programming and Branch-and-Bound. Both are implemented in Java and evaluated on multiple datasets to analyze runtime performance and solution quality.
 
 ## Problem Description
 
