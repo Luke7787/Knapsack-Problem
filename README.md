@@ -4,22 +4,24 @@ This project compares two approaches to the 0-1 Knapsack Problem: Dynamic Progra
 
 ## Problem Description
 
-The 0-1 Knapsack Problem involves selecting items to maximize the total value without exceeding the capacity of the knapsack. Each item has a value and a weight, and the problem is to determine the optimal subset of items to include in the knapsack.
+The 0-1 Knapsack Problem requires selecting a subset of items to maximize total value without exceeding a given capacity. Each item has an associated weight and value, and each item can either be included or excluded.
 
 ### Input Format
 
-The input file format for the knapsack problem is as follows:
+The input file format is as follows:
 
-N 
-1 v1 w1 
-2 v2 w2 
-.  .  . 
-N vN wN 
+```
+N
+1 v1 w1
+2 v2 w2
+...
+N vN wN
 C
+```
 
-- `N` is the number of items.
-- Each item has a unique index, value, and weight.
-- `C` is the capacity of the knapsack.
+- `N` — number of items  
+- Each line contains: `index value weight`  
+- `C` — knapsack capacity
 
 ## Approach 1: Dynamic Programming
 
