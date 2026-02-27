@@ -25,22 +25,24 @@ C
 
 ## Approach 1: Dynamic Programming
 
-### Description
-
-The Dynamic Programming (DP) approach solves the knapsack problem by building up a table of solutions to subproblems. The final solution is derived from this table, which allows for efficient computation of the optimal value and weight.
+Solves the knapsack problem by building a table of subproblem solutions. The optimal result is derived from this table, enabling efficient computation of maximum value within capacity.
 
 ### Output
 
-Upon termination, the program should output:
-Dynamic Programming solution: Value <value>, Weight <weight> <item#> <item#> <item#> ...
+Upon completion, the program prints:
 
-The output includes the items chosen by the DP algorithm in ascending index order.
+```
+Dynamic Programming solution: Value VALUE, Weight WEIGHT ITEM1 ITEM2 ITEM3 ...
+```
+
+Selected item indices are listed in ascending order.
 
 ### Java Implementation
 
-- **File Name**: `DynProg.java`
-- **Main Method**: Reads the input file and runs the dynamic programming algorithm.
-- **Output**: Prints the value, weight, and indices of chosen items.
+- File: `DynProg.java`
+- Reads the input file
+- Executes the dynamic programming algorithm
+- Outputs total value, total weight, and selected item indices
 
 ## Approach 2: Branch-and-Bound
 
